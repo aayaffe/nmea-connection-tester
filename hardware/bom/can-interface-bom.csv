@@ -1,0 +1,50 @@
+Reference,Quantity,Description,Part Number,Manufacturer,Package,Value,Voltage,Current,Power,Tolerance,Footprint,Notes,Unit Price,Supplier,Supplier P/N
+U1,1,CAN Transceiver,MCP2551-I/SN,Microchip,SOIC-8,,,,,,"CAN_SOIC-8","High-speed CAN transceiver, 1Mbps",$1.50,Digi-Key,MCP2551-I/SN-ND
+U1_ALT1,1,CAN Transceiver (3.3V),SN65HVD230DR,Texas Instruments,SOIC-8,,,,,,"CAN_SOIC-8","3.3V CAN transceiver, preferred for 3.3V MCU",$1.80,Digi-Key,296-28732-1-ND
+U1_ALT2,1,CAN Transceiver,TJA1050T/CM,NXP,SOIC-8,,,,,,"CAN_SOIC-8","Automotive grade, high EMC performance",$2.20,Mouser,771-TJA1050T/CM118
+U2,1,Buck Converter,LM2596S-5.0,Texas Instruments,TO-263,5V,,3A,,,TO-263-5,"5V Fixed output, simple design",$1.50,Digi-Key,LM2596S-5.0/NOPB-ND
+U2_ALT1,1,Buck Converter Module,MP1584EN,Monolithic Power,Module,5V,,3A,,,Module,"Pre-assembled module, recommended for prototype",$1.20,Amazon,MP1584-MODULE
+U2_ALT2,1,Buck Converter,TPS54331DR,Texas Instruments,SOIC-8,5V,,3A,,,SOIC-8,"High efficiency 95%, integrated FETs",$2.00,Digi-Key,296-23056-1-ND
+U3,1,LDO Regulator,AMS1117-3.3,Advanced Monolithic,SOT-223,3.3V,,1A,,,SOT-223,"Common 3.3V LDO, 800mA output",$0.20,LCSC,C6186
+U3_ALT1,1,LDO Regulator,LM1117-3.3,Texas Instruments,SOT-223,3.3V,,800mA,,,SOT-223,"Drop-in replacement for AMS1117",$0.40,Digi-Key,LM1117IMP-3.3/NOPB-ND
+U3_ALT2,1,LDO Regulator,XC6206P332MR,Torex,SOT-23,3.3V,,200mA,,,SOT-23,"Low power, small package",$0.15,Digi-Key,893-1427-1-ND
+U4,1,Galvanic Isolator (Optional),ADUM1201BRZ,Analog Devices,SOIC-8,,,,,,"SOIC-8","Dual channel digital isolator, optional for isolation",$3.50,Digi-Key,ADUM1201BRZ-ND
+C1,1,Capacitor Ceramic,,,Ceramic,100nF,50V,,,10%,0805,"Bypass cap for CAN transceiver VDD",$0.05,LCSC,C49678
+C2,1,Capacitor Ceramic,,,Ceramic,10µF,25V,,,10%,1206,"Input filter for power supply",$0.10,LCSC,C13585
+C3,1,Capacitor Electrolytic,,,Electrolytic,100µF,25V,,,20%,6.3x7.7mm,"Input bulk capacitor for buck converter",$0.15,LCSC,C134529
+C4,1,Capacitor Electrolytic,,,Electrolytic,100µF,16V,,,20%,6.3x7.7mm,"Output capacitor for buck converter",$0.12,LCSC,C134528
+C5,1,Capacitor Ceramic,,,Ceramic,10µF,16V,,,10%,1206,"Input capacitor for LDO",$0.08,LCSC,C19702
+C6,1,Capacitor Ceramic,,,Ceramic,22µF,10V,,,10%,1206,"Output capacitor for LDO",$0.12,LCSC,C45783
+C7,1,Capacitor Ceramic (Optional),,,Ceramic,100pF,50V,,,5%,0603,"Optional filter cap on CAN lines",$0.03,LCSC,C1674
+C8,1,Capacitor Ceramic (Optional),,,Ceramic,100pF,50V,,,5%,0603,"Optional filter cap on CAN lines",$0.03,LCSC,C1674
+L1,1,Inductor,,,Shielded,100µH,,2A,,,7x7mm,"For buck converter, shielded type recommended",$0.50,LCSC,C408411
+L1_ALT,1,Inductor,SRR1206-101K,Bourns,1206,100µH,,2A,,,12x12mm,"High quality shielded inductor",$1.20,Digi-Key,SRR1206-101KCT-ND
+R1,1,Resistor,,,Resistor,10kΩ,,,,5%,0805,"Mode select for CAN transceiver (Rs pin)",$0.01,LCSC,C84376
+R2,1,Resistor (Optional),,,Resistor,10kΩ,,,,5%,0805,"Optional pull-up on RXD",$0.01,LCSC,C84376
+R3,1,Resistor,,,Resistor,120Ω,,,1/4W,1%,0805,"Termination resistor for CAN bus",$0.02,LCSC,C17437
+R3_ALT,2,Resistor,,,Resistor,60Ω,,,1/4W,1%,0805,"Alternative: 2x 60Ω in series",$0.02,LCSC,C23231
+R4,1,Resistor (Optional),,,Resistor,22Ω,,,1/4W,1%,0805,"Series resistor for CAN_H EMC protection",$0.01,LCSC,C17561
+R5,1,Resistor (Optional),,,Resistor,22Ω,,,1/4W,1%,0805,"Series resistor for CAN_L EMC protection",$0.01,LCSC,C17561
+D1,1,TVS Diode,SMBJ18CA,Littelfuse,SMB,18V,,,600W,,DO-214AA,"Transient voltage suppressor for input protection",$0.35,Digi-Key,SMBJ18CALFCT-ND
+D2,1,Schottky Diode (if using LM2596),,,DO-214AC,40V,,3A,,,SMA,"Catch diode for buck converter (may be integrated)",$0.15,LCSC,C64898
+D3,1,LED Indicator (Optional),,,LED,,,,20mA,,0805,"Status LED - Power indicator",$0.05,LCSC,C2297
+D4,1,LED Indicator (Optional),,,LED,,,,20mA,,0805,"Status LED - CAN activity",$0.05,LCSC,C2297
+F1,1,Resettable Fuse,MF-R200,Bourns,1812,16V,,2A,,,1812,"Polyfuse for overcurrent protection",$0.25,Digi-Key,MF-R200-ND
+SW1,1,Switch SPST (Optional),,,Toggle,,,,,,6x6mm,"Termination resistor enable/disable switch",$0.15,LCSC,C318884
+SW1_ALT,1,Jumper,,,Jumper,,,,,,2.54mm,"Alternative: 2-pin header with jumper",$0.05,LCSC,C65114
+J1,1,Connector Micro-C,SACC-M12MS-5CON-PG9,Phoenix Contact,M12,,,,,,"M12_A-coded","NMEA 2000 DeviceNet Micro-C connector, PCB mount",$10.00,Digi-Key,277-1513367-ND
+J1_ALT1,1,Connector Micro-C,T4043312051-000,TE Connectivity,M12,,,,,,"M12_A-coded","Alternative M12 connector, lower cost",$7.50,Mouser,571-T4043312051000
+J1_ALT2,1,Screw Terminal,691137710005,Wurth Elektronik,5.08mm,,,,,,"TERM_5.08mm","Screw terminal alternative, 5 position",$0.80,Digi-Key,732-2267-ND
+J2,1,Header (Optional),,,Pin Header,2.54mm,,,,,2x5,"Optional service/debug header",$0.10,LCSC,C65114
+TP1,1,Test Point,,,Test Point,,,,,,"Keystone_5000","VIN voltage test point",$0.05,Digi-Key,5000K-ND
+TP2,1,Test Point,,,Test Point,,,,,,"Keystone_5000","5V voltage test point",$0.05,Digi-Key,5000K-ND
+TP3,1,Test Point,,,Test Point,,,,,,"Keystone_5000","3.3V voltage test point",$0.05,Digi-Key,5000K-ND
+TP4,1,Test Point,,,Test Point,,,,,,"Keystone_5000","CAN_H test point",$0.05,Digi-Key,5000K-ND
+TP5,1,Test Point,,,Test Point,,,,,,"Keystone_5000","CAN_L test point",$0.05,Digi-Key,5000K-ND
+TP6,1,Test Point,,,Test Point,,,,,,"Keystone_5000","GND test point",$0.05,Digi-Key,5000K-ND
+FID1,3,Fiducial,,,Fiducial,1mm,,,,,,"1mm bare copper circle","PCB assembly alignment marks (3 required)",$0.00,N/A,N/A
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,"TOTAL BASE COST (excluding optional parts):",$17.50,,
+,,,,,,,,,,,,"TOTAL WITH OPTIONAL ISOLATION:",$21.00,,
+,,,,,,,,,,,,"TOTAL WITH MICRO-C CONNECTOR:",$27.50,,
+,,,,,,,,,,,,"TOTAL WITH SCREW TERMINAL:",$18.30,,
