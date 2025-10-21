@@ -1,0 +1,14 @@
+Reference,Quantity,Description,Manufacturer,Part Number,Supplier,Supplier Part Number,Unit Cost,Total Cost,Notes
+DISP1,1,3.5" TFT LCD Display 480x320 ILI9488 SPI with Touch,Generic,ILI9488-3.5-SPI-TOUCH,AliExpress,Multiple,12.00,12.00,Main display module
+Q1,1,N-Channel MOSFET 60V 300mA SOT-23,ON Semiconductor,2N7002,Digikey,2N7002NCT-ND,0.45,0.45,Backlight PWM control
+R1,1,Resistor 100Ω 1/4W 5% TH,Yageo,CFR-25JB-52-100R,Digikey,100QBK-ND,0.10,0.10,LED current limiting
+R2,1,Resistor 10kΩ 1/4W 5% TH,Yageo,CFR-25JB-52-10K,Digikey,10KQBK-ND,0.10,0.10,MOSFET gate pull-down
+R3,1,Resistor 10kΩ 1/4W 5% TH,Yageo,CFR-25JB-52-10K,Digikey,10KQBK-ND,0.10,0.10,Touch IRQ pull-up
+R4,4,Resistor 33Ω 1/4W 5% TH,Yageo,CFR-25JB-52-33R,Digikey,33QBK-ND,0.10,0.40,SPI signal integrity (CLK/MOSI/MISO/CS)
+C1,1,Capacitor 10µF 16V Ceramic X7R,TDK,C3216X7R1C106K160AB,Digikey,445-5984-1-ND,0.35,0.35,Display power decoupling
+C2,1,Capacitor 0.1µF 50V Ceramic X7R,TDK,C2012X7R1H104K125AB,Digikey,445-1418-1-ND,0.15,0.15,Display power decoupling
+C3,1,Capacitor 10µF 16V Ceramic X7R,TDK,C3216X7R1C106K160AB,Digikey,445-5984-1-ND,0.35,0.35,Touch controller decoupling
+C4,1,Capacitor 0.1µF 50V Ceramic X7R,TDK,C2012X7R1H104K125AB,Digikey,445-1418-1-ND,0.15,0.15,Touch controller decoupling
+,,,,,,SUBTOTAL,14.30,,
+,,,,,,Contingency (10%),1.43,,
+,,,,,,TOTAL,15.73,,
